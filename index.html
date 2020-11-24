@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Good News Club</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #FB5B4F;
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+    }
+    .sr-only:not(:focus):not(:active) {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+    img {
+      display: block;
+      max-width: 573px;
+      user-select: none;
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+      -moz-user-drag: none;
+      -o-user-drag: none;
+			animation: spin 7200ms linear infinite;
+			will-change: transform;
+    }
+		@keyframes spin {
+			to { transform: rotate(360deg)}
+		}
+  </style>
+</head>
+<body>
+  <div class="sr-only">
+    <h1>The Good News Club</h1>
+    <p>Coming soon.</p>
+  </div>
+  <img src="tgnc.png" alt="The Good News Club is coming soon." aria-hidden>
+</body>
+</html>
